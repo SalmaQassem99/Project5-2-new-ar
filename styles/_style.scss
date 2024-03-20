@@ -161,7 +161,7 @@ $border-1: 3vh;
   visibility: hidden;
   background-size: cover;
   background-position: 50% 100%;
-  transform-origin: left top;
+  transform-origin: right top;
 
   &.hideGame {
     animation-name: hideGame;
