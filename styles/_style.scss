@@ -673,6 +673,9 @@ $border-1: 3vh;
         margin: 0 auto;
         position: relative;
         top: -3vh;
+        img {
+          transform: scaleX(-1);
+        }
       }
 
       .content-card {

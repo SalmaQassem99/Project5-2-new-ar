@@ -191,7 +191,8 @@
         if (link !== "") {
           gameContainer.classList.add("hideGame");
           gameContainer.addEventListener("animationend", () => {
-            gameContainer.style.visibility = "hidden";
+            gameContainer.style.transform = "scale(0)";
+            gameContainer.classList.remove("hideGame");
             window.location.href = link;
           })
         }
