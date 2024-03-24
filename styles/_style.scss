@@ -81,7 +81,7 @@ $border-1: 3vh;
   max-height: 3rem;
   aspect-ratio: 1;
   position: relative;
-  z-index: 100;
+  z-index: 1000;
   background: linear-gradient(to bottom, $yellow-3 2%, $yellow-2);
   color: $white-1;
   font-size: 1.25rem;
@@ -94,6 +94,7 @@ $border-1: 3vh;
   }
 
   &.sound {
+    display: none;
     .fa-solid {
       &.off {
         display: none;
@@ -149,6 +150,12 @@ $border-1: 3vh;
     top: calc(100vh - (2 * $padding));
     transform: translateY(-100%);
     transition: 0.5s;
+    visibility: hidden;
+    .fa-solid {
+      &.hide {
+        display: none;
+      }
+    }
   }
 }
 
